@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <center>
+            <input type="text">
+            <br>
+
+            <input type="password">
+            <br>
+
+            <input type="date">
+            <br>
+
+            <input type="time">
+            <br>
+
+            <input type="color" id="color">
+            <br>
+            <hr>
+            <h1>Placeholder , labels and buttons</h1>
+            <input type="text" placeholder="Enter your usename"><br><br><br>
+            <input type="password" placeholder="Enter your password"><br><br>
+            <button type=Submit>Submit</button>
+            <br><br>
+            <hr>
+        </center>
+        
+
+
+        <center>
+            <h1>Radio Buttons</h1>
+            <form>
+                <label for="male">
+                    <input type="radio" id="male" name="gender" value="male"> Male<br>
+                </label>
+                <label for="female">
+                    <input type="radio" id="female" name="gender" value="female"> Female<br>
+                </label>
+                <label for="other">
+                    <input type="radio" id="other" name="gender" value="other"> Other<br>
+                </label>
+            </form>
+        </center>
+        <hr>
+        <center>
+            <h1>range</h1>
+            <label for="range">Range:</label>
+            <input type="range" id="range" min="70" max="100" step="5">
+            
+            <center><h1>dropdown</h1>
+                <label for="dropdown">Dropdown:</label>
+                <select id="dropdown" name="dropdown">
+                    <option value="option1">options</option>
+                    <option value="option2">c</option>
+                    <option value="option3">c++</option>
+                    <option value="option3\4">java</option>
+                </select><br><br>
+            </center>
+        
+        </center>
+
+        <script>
+            var colorInput = document.getElementById("color");
+            
+            // Add an event listener to detect changes in the color input
+            colorInput.addEventListener("input", function() {
+                // Update the background color of the body
+                document.body.style.backgroundColor = colorInput.value;
+            });
+        </script>
+</body>
+
+</html>
