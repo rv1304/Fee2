@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+ <style>
+        body{
+            margin:0;
+            padding: 0;
+            font-family: 'Varela Round', sans-serif;
+            color:#333;
+            background-color: #f8f8f8;
+        }
+        #container{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content:space-around;
+            padding: 10px;
+    
+        }
+        
+        
+    
+        #components{
+            display :flex;
+            flex-wrap: wrap;
+        
+            align-items: center;
+            
+        }
+        #components li{
+            list-style:none;
+            flex-wrap: wrap;
+           justify-content: center;
+        }
+        #hero{
+            height:100vh;
+            background-image: url("./toystorebg.jpg");
+            background-size:cover;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        #overlay{
+            background-color:white;
+            padding: 40px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 35%;
+        }
+        
+
+        button{
+            background-color: #a5c926;
+            padding: 12px;
+            border-radius: 20px;
+            color:white;
+            border-color: transparent;
+        }
+        #types{
+            display: flex;
+            flex-wrap: wrap;
+            gap:50px;
+            margin:10%
+        }
+        
+
+    #cn{
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+    #Logo {
+        display: flex;
+        gap:10px
+    }
+    #Logo ul{
+        display: flex;
+        list-style: none;
+        gap:20px
+    }
+    #overlay h1{
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    #stuffed_animal{
+        height:fit-content;
+        margin-bottom: 20px;
+        margin-left:10% ;
+        margin-right:10% ;
+    }
+    #wooden_toys{
+        height:fit-content;
+        margin-bottom: 20px;
+        margin-left:10% ;
+        margin-right:10% ;
+    }
+    .card_container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap:30px
+    
+
+    }
+    .card{
+        border-radius: 20px;
+        background-color:white;
+        padding: 20px;
+        text-align: center;
+        box-shadow: #333;
+        
+        
+        
+    }
+    .card img{
+        height: 150px;
+    }
+    #footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color:white;
+        padding: 10px;
+        border-bottom: #333;
+        margin-right:7%;
+        margin-left:3%;
+
+    }
+    #footer div ul{
+        list-style: none;
+        display: flex;
+        gap:10px;
+        
+    }
+    #footer div img{
+        height:20px;
+        
+    }
+    footer{
+        background-color: #a5c926;
+        color:white;
+      
+    }
+    #footer_bottom {
+        display: flex;
+        font-size: 0.7rem;
+        justify-content: space-between;
+        margin-right: 10px;
+        list-style: none;
+        margin-right:7%;
+        margin-left:3%;
+    }
+    #footer_bottom ul{
+        list-style: none;
+    }
+    #footer_bottom div ul{
+        display: flex;
+        gap:20px;
+        list-style:circle;
+    }
+    #types{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        max-height: fit-content;
+    }
+    .card1{
+        height: 150px;
+        background-color: #a5c926;
+        border-radius: 10px;
+
+        
+
+    }
+    .card1{
+        height: 200px;
+        position: relative;
+        min-width:400px;
+    }
+    .card1 img{
+        position: absolute;
+        height: 200px;
+        margin-top: -50px;
+        
+
+    }
+    .card1 h3{
+        color:white;
+        margin-left: 50%;
+        margin-top:13%;
+        font-weight: 400;
+    }
+    .card1 button{
+        background-color: white;
+        margin-left: 50%;
+       width:30%;
+       color:black
+    }
+    #video{
+        height: 80vh;
+        
+    }
+    .hr{
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 5%;
+    }
+    .hr h1{
+        justify-self: flex-start;
+    }
+    .hr img{
+        height:16px;
+        
+    }
+    .see_all{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    #video{
+        height: 80vh;
+
+        
+    }
+    #video_div{
+        background-image: url("https://assets.website-files.com/5badda2935e11303a89a461e/5baf3d57ace69c149bb331b8_tim-gouw-165547-unsplash.jpg");
+        background-size: cover;
+        height:80vh;
+    }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div id="container" >
+            <div id="Logo">
+                <h1 id="cn">
+                    ToyStore
+                </h1>
+                <ul>
+                    <li>Catalog</li>
+                    <li>Delivery</li>
+                    <li>About</li>
+                    <li>Contacts</li>
+                </ul>
+
+            </div>
+            <div id="components">
+                <li>Cart</li>
+                <li><img src="https://assets.website-files.com/5badda2935e11303a89a461e/5baf75c3bf02346640399fec_cart-icon.svg" alt=""></li>
+                <li></li>
+                <li></li>
+            </div>
+        </div>
+    </header>
+    
+    <section id="hero">
+        <div id="overlay">
+            <p style="color: #a5c926;">Say Hello to ToyStore!</p>
+            <h1 align="center" >Free Ecommerce Template <br>
+                For Webflow</h1>
+            <button>Open Catalog</button>
+        </div>
+    </section>
+    
+    <section id="types">
+        <div class="card1" style="background-color: #ffc12c">
+            <img src="https://assets.website-files.com/5badda2935e11303a89a461e/5badf21356ac5470c84dfbf4_33903-2-plush-toy-transparent-image-min-p-500.png" alt="">
+            <h3>Stuffed Animal</h3>
+            <button>Shop now</button>
+            
+        </div>
+        <div class="card1" style="background-color: #fb416b;">
+            <img src="https://assets.website-files.com/5badda2935e11303a89a461e/5badf2131f2da24c02171c72_33727-9-wooden-toy-transparent-image-min-p-500.png" alt="">
+            <h3>Stuffed Animal</h3>
+            <button>Shop now</button>
+            <i class='far fa-arrow-alt-circle-right'></i>
+        </div>
+        
+    </section>
+
+    <section id="stuffed_animal">
+        <div class="hr">
+            <h1>Stuffed Animals</h1>
+            <div class="see_all">
+            <p>See All Toys</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2qBLhLJKdbZ07M_zf4vSeyN5fCFw_jQiT0Q&s" alt="">
+            </div>
+        </div>
+
+        <div class="card_container">
+            <div class="card">
+                <img src="https://assets.website-files.com/5badda2935e11303a89a461e/5badf21356ac5470c84dfbf4_33903-2-plush-toy-transparent-image-min-p-500.png">
+                <h2>Teddy Bear</h2>
+                <button>$30.00 USD</button>
+            </div>
+            <div class="card">
+                <img src="https://assets.website-files.com/5baddb6a35e113da0e9a4802/5bae0f7a1f2da258291736c4_33908-7-plush-toy-file-min.png">
+                <h2>Mega Plush Toy</h2>
+                <button>$38.00 USD</button>
+            </div>
+            <div class="card">
+                <img src="https://assets.website-files.com/5baddb6a35e113da0e9a4802/5bae0f1835e11376299a8089_33878-5-plush-toy-transparent-min.png">
+                <h2>Cute Dog</h2>
+                <button>$24.00 USD</button>
+            </div>
+            <div class="card">
+                <img src="https://assets.website-files.com/5baddb6a35e113da0e9a4802/5bae0f1835e11376299a8089_33878-5-plush-toy-transparent-min.png">
+                <h2>Little Friend</h2>
+                <button>$27.00 USD</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="wooden_toys">
+        <div class="hr">
+            <h1>Wooden toys</h1>
+            <div class="see_all">
+            <p>See All Toys</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2qBLhLJKdbZ07M_zf4vSeyN5fCFw_jQiT0Q&s" alt="">
+            </div>
+        </div>
+
+        <div class="card_container">
+            <div class="card">
+                <img src="https://assets.website-files.com/5baddb6a35e113da0e9a4802/5baf529c7a16ad5b5fd9fdf3_33727-9-wooden-toy-transparent-image-min.png">
+                <h2>Happy Flower</h2>
+                <button>$38.00 USD</button>
+            </div>
+            <div class="card">
+                <img src="https://assets.website-files.com/5baddb6a35e113da0e9a4802/5baf525bbf02340f30398cb3_33505-6-wooden-toy-clipart-min.png">
+                <h2>Lift Machine</h2>
+                <button>$24.00 USD</button>
+            </div>
+            <div class="card">
+                <img src="https://assets.website-files.com/5baddb6a35e113da0e9a4802/5baf522457091399591a83fe_33631-9-wooden-toy-photo-min.png">
+                <h2>Wooden Camera</h2>
+                <button>$32.00 USD</button>
+            </div>
+            <div class="card">
+                <img src="https://assets.website-files.com/5baddb6a35e113da0e9a4802/5baf51fc570913c1d31a83f6_33504-4-wooden-toy-transparent-min-p-800.png">
+                <h2>Little Rabbit</h2>
+                <button>$16.00 USD</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="video">
+        <div id="video_div">
+            hello
+        </div>
+    </section>
+
+    <footer>
+        <div id="footer">
+        <div>
+            <ul><li>ToyStore</li></ul>
+        </div>
+
+        <div>
+            <ul><li>Home</li><li>Catalog</li><li>Delivery</li><li>About</li><li>Contacts</li>
+        </div>
+
+        <div>
+           <img src="https://assets.website-files.com/5badda2935e11303a89a461e/5bae5eec5227792568635e37_twitter-icon-white.svg" alt=""> 
+            <img src="https://assets.website-files.com/5badda2935e11303a89a461e/5bae5eec3cb36463d4cf4661_facebook-icon-white.svg" alt="">
+            <img src="https://assets.website-files.com/5badda2935e11303a89a461e/5bae5eec7fe624275552217c_instagram-icon-white.svg" alt="">
+            <img src="https://assets.website-files.com/5badda2935e11303a89a461e/5bae5eec6e93377c0bbdba8a_pinterest-icon-white.svg" alt="">
+            <img src="https://assets.website-files.com/5badda2935e11303a89a461e/5bae5eecfff242b7c309e311_youtube-icon.svg" alt="">
+        </div>
+    </div>   
+        <hr width="90%">
+        <div id="footer_bottom">
+            <ul>
+                <li>Create with love Elastic Themes</li>
+            </ul>
+        
+            <div id="headerl">
+            <ul>
+                <li>Powered by Webflow</li>
+                <li>Style Guide</li>
+                <li>Licensing</li>
+            </ul>
+            </div>
+    </div>
+    </footer>
+</body>
+</html>
